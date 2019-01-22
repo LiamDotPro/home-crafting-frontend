@@ -1,6 +1,6 @@
 <template>
     <div id="home">
-
+        <h1>Jenkins did this!</h1>
     </div>
 </template>
 
