@@ -8,12 +8,6 @@
                             <TenantLogo></TenantLogo>
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div class="col">
-                            <tenant-changer :tenantModalEvent="showModalEvent"></tenant-changer>
-                        </div>
-                    </div>
                     <div class="row">
                         <div class="col">
                             <LoginFields></LoginFields>

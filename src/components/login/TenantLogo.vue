@@ -21,6 +21,7 @@
     #TenantLogo {
         min-height: 200px;
         text-align: center;
+        margin-bottom: 60px;
 
         img {
             max-width: 200px;
