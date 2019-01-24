@@ -1,6 +1,13 @@
 <template>
     <div class="TopMenu fixed-top flex-md-nowrap">
+        <div class="logo-area">
+            <div class="logo-holder">
 
+            </div>
+            <div class="burger-holder">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -22,7 +29,40 @@
         padding: 0 !important;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
         background: #fff;
-        height: 48px;
+        height: 56px;
+
+        .logo-area {
+            height: 100%;
+            width: 241px;
+            border-right: 1px solid #f1f1f1;
+            display: flex;
+            align-items: center;
+
+            .logo-holder {
+                width: 100%;
+                height: 100%;
+            }
+
+            .burger-holder {
+                width: 20%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+
+                i {
+                    font-size: 22px;
+                    opacity: 0.2;
+                    transition: opacity 300ms ease;
+
+                    &:hover {
+                        opacity: 1;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
     }
 
     .fixed-top {

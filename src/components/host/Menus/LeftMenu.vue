@@ -1,18 +1,28 @@
 <template>
     <div class="LeftMenu d-none d-md-block">
         <div class="sticky">
-
+            <template v-for="linkItem in Links">
+                <left-nav-link :iconNameProp="linkItem.iconName"></left-nav-link>
+            </template>
         </div>
     </div>
 </template>
 
 <script lang="ts">
     import {Component, Vue} from 'vue-property-decorator';
+    import LeftNavLink from '@/components/host/Menus/left-menu/LeftNavLink.vue';
+    import ILeftNavLink from '@/components/host/Menus/types/ILeftNavLink';
 
     @Component({
-        components: {},
+        components: {LeftNavLink},
     })
     export default class LeftMenu extends Vue {
+
+        public Links: ILeftNavLink[] = [
+            {
+                iconName: 'fa-home',
+            },
+        ];
 
     }
 
@@ -27,15 +37,15 @@
         bottom: 0;
         left: 0;
         z-index: 100;
-        width:240px;
+        width: 240px;
         padding: 48px 0 0;
-        box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+        color: white;
 
         .sticky {
             position: sticky;
             top: 0;
             height: calc(100vh - 48px);
-            padding-top: .5rem;
+            padding-top: 1rem;
             overflow-x: hidden;
             overflow-y: auto;
         }

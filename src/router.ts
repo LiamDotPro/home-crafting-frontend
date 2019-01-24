@@ -26,8 +26,8 @@ export default new Router({
             component: HostDashboard,
         },
         {
-            path: '/host/dashboard',
-            name: 'host dashboard',
+            path: '/host/home',
+            name: 'host dashboard redirect',
             component: HostDashboard,
         },
     ],

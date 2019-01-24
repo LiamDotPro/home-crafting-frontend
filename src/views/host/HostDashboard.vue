@@ -4,8 +4,14 @@
         <div class="container-fluid">
             <div class="row">
                 <LeftMenu/>
-                <div class="main-area col-lg-10">
-                    <h1>Test</h1>
+                <div class="main-area col-12">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="h1">test</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -32,21 +38,12 @@
         min-height: 100vh;
     }
 
-    .vertical-layout {
-        position: relative;
-        display: flex;
-        flex: 1 1 0%;
-        width: 100%;
-        min-width: 0;
-        flex-grow: 1;
-        min-height: 100vh;
-    }
-
     .main-area {
         position: relative;
-        padding-top: 48px;
-        margin-left: 240px;
-        padding-left: 1.5rem !important;
-        padding-right: 1.5rem !important;
+        padding-top: 56px;
+        padding-left: 240px;
+        padding-right: 0;
+        width: 100%;
+        min-height: 100vh;
     }
 </style>
