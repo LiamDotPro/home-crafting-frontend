@@ -1,5 +1,6 @@
 <template>
-    <div id="home">
+    <div class="Tutorials">
+
     </div>
 </template>
 
@@ -9,8 +10,12 @@
     @Component({
         components: {},
     })
-    export default class Home extends Vue {
+    export default class Tutorials extends Vue {
 
     }
 
 </script>
+
+<style lang="scss" scoped>
+
+</style>

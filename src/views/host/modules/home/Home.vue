@@ -1,5 +1,6 @@
 <template>
-    <div id="home">
+    <div class="Home">
+
     </div>
 </template>
 
@@ -14,3 +15,7 @@
     }
 
 </script>
+
+<style lang="scss" scoped>
+
+</style>
