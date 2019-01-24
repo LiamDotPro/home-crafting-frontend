@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from './views/Home.vue';
+import Home from './views/public/Home.vue';
 import Login from './views/login/Login.vue';
 import HostDashboard from '@/views/host/HostDashboard.vue';
 import Settings from '@/views/host/modules/settings/Settings.vue';

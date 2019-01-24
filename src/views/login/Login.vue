@@ -60,13 +60,13 @@
         position: relative;
         width: 100%;
         height: 100%;
-        filter: contrast(1.75);
-        opacity: 0.3;
+        filter: contrast(3);
+        opacity: 0.2;
         z-index: 2;
     }
 
     .splash-area {
-        background: url("../../assets/icebergs.jpg");
+        background: url("../../assets/red-splashes.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: right top;

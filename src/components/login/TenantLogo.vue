@@ -1,6 +1,6 @@
 <template>
     <div id="TenantLogo">
-        <img :src="require('../../assets/gopher-space.png')" alt="Your company logo"></img>
+        <img :src="require('../../assets/logo-assets/logo.png')" alt="Your company logo"></img>
     </div>
 </template>
 
@@ -21,11 +21,10 @@
     #TenantLogo {
         min-height: 200px;
         text-align: center;
-        margin-bottom: 60px;
 
         img {
-            max-width: 200px;
-            max-height: 200px;
+            max-width: 300px;
+            max-height: 300px;
         }
     }
 
