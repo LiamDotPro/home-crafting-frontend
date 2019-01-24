@@ -2,7 +2,8 @@
     <div class="TopMenu fixed-top flex-md-nowrap">
         <div class="logo-area">
             <div class="logo-holder">
-
+                <img style="height:56px;" class="img-fluid" :src="require('../../../assets/logo-assets/logo.png')"
+                     alt="logo"></img>
             </div>
             <div class="burger-holder">
                 <i class="fa fa-bars"></i>
@@ -41,6 +42,9 @@
             .logo-holder {
                 width: 100%;
                 height: 100%;
+                justify-content: center;
+                align-items: center;
+                display: flex;
             }
 
             .burger-holder {
