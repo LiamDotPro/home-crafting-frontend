@@ -32,10 +32,13 @@
 
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
     .HostDashboard {
         background: #f5f5f5;
         min-height: 100vh;
+        @import url('https://fonts.googleapis.com/css?family=Inconsolata');
+        font-family: 'Inconsolata', monospace !important;
+        font-weight: 200;
     }
 
     .main-area {

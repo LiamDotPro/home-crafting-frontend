@@ -1,11 +1,11 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from './views/Home.vue';
+import Home from './views/public/Home.vue';
 import Login from './views/login/Login.vue';
 import HostDashboard from '@/views/host/HostDashboard.vue';
 import Settings from '@/views/host/modules/settings/Settings.vue';
-import Customers from "@/views/host/modules/customers/Customers.vue";
-import Tutorials from "@/views/host/modules/tutorials/Tutorials.vue";
+import Customers from '@/views/host/modules/customers/Customers.vue';
+import Tutorials from '@/views/host/modules/tutorials/Tutorials.vue';
 
 Vue.use(Router);
 
@@ -30,15 +30,15 @@ export default new Router({
             children: [
                 {
                     path: 'home',
-                    component: Home
+                    component: Home,
                 },
                 {
                     path: 'customers',
-                    component: Customers
+                    component: Customers,
                 },
                 {
                     path: 'tutorials',
-                    component: Tutorials
+                    component: Tutorials,
                 },
                 {
                     path: 'settings',

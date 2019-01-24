@@ -44,10 +44,25 @@
         }
     }
 
+    .router-link-exact-active {
+        .left-nav-item {
+            background: #252935;
+            transition: background ease 300ms;
+
+            .icon {
+                opacity: 1 !important;
+            }
+
+            .link {
+                opacity: 1 !important;
+            }
+
+        }
+    }
+
     .left-nav-item {
         height: 50px;
         display: flex;
-        flex: 1 1 0;
         align-items: center;
         border-bottom: 1px solid #383e4e3b;
 
@@ -57,6 +72,8 @@
             display: flex;
             padding: 5px;
             align-items: center;
+            opacity: 0.4;
+            transition: opacity 300ms ease;
         }
 
         .link {
@@ -65,6 +82,8 @@
             padding: 5px;
             display: flex;
             align-items: center;
+            opacity: 0.4;
+            transition: opacity 300ms ease;
         }
 
     }

@@ -5,10 +5,9 @@
 </template>
 
 <style lang="scss">
-    @import url('https://fonts.googleapis.com/css?family=Inconsolata');
+    @import url('https://fonts.googleapis.com/css?family=Catamaran:300');
 
     body {
-        font-family: 'Inconsolata', monospace !important;
-        font-weight: 200;
+        font-family: 'Catamaran', sans-serif;
     }
 </style>
