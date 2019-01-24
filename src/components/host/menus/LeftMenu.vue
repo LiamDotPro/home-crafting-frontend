@@ -13,8 +13,8 @@
 
 <script lang="ts">
     import {Component, Vue} from 'vue-property-decorator';
-    import LeftNavLink from '@/components/host/Menus/left-menu/LeftNavLink.vue';
-    import ILeftNavLink from '@/components/host/Menus/types/ILeftNavLink';
+    import LeftNavLink from '@/components/host/menus/left-menu/LeftNavLink.vue';
+    import ILeftNavLink from '@/components/host/menus/types/ILeftNavLink';
 
     @Component({
         components: {LeftNavLink},
@@ -26,6 +26,21 @@
                 IconName: 'fa-home',
                 LinkPath: '/host/home',
                 LinkTitle: 'Home',
+            },
+            {
+                IconName: 'fa-user',
+                LinkPath: '/host/customers',
+                LinkTitle: 'Customers',
+            },
+            {
+                IconName: 'fa-vimeo',
+                LinkPath: '/host/tutorials',
+                LinkTitle: 'Tutorials',
+            },
+            {
+                IconName: 'fa-cog',
+                LinkPath: '/host/settings',
+                LinkTitle: 'Settings',
             },
         ];
 
@@ -42,15 +57,16 @@
         bottom: 0;
         left: 0;
         z-index: 100;
-        width: 240px;
+        width: 242px;
         padding: 48px 0 0;
         color: white;
+        border-right: 1px solid #f1f1f1;
 
         .sticky {
             position: sticky;
             top: 0;
             height: calc(100vh - 48px);
-            padding-top: 1rem;
+            padding-top: 0.5rem;
             overflow-x: hidden;
             overflow-y: auto;
         }

@@ -29,12 +29,6 @@
 
         @Prop({default: ''})
         public linkTitle!: string;
-
-        // bind prop values to local data values.
-        // public iconName: string = this.iconName;
-        // public linkPath: string = this.linkPath;
-        // public linkTitle: string = this.linkTitle;
-
     }
 
 </script>
@@ -51,22 +45,26 @@
     }
 
     .left-nav-item {
-        height: 30px;
+        height: 50px;
         display: flex;
         flex: 1 1 0;
         align-items: center;
+        border-bottom: 1px solid #383e4e3b;
 
         .icon {
             margin-left: 10px;
             height: 100%;
+            display: flex;
             padding: 5px;
+            align-items: center;
         }
 
         .link {
             margin-left: 10px;
             height: 100%;
             padding: 5px;
-
+            display: flex;
+            align-items: center;
         }
 
     }

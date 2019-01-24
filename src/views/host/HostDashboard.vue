@@ -8,7 +8,7 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
-                                <div class="h1">test</div>
+                                <router-view/>
                             </div>
                         </div>
                     </div>
@@ -20,8 +20,8 @@
 
 <script lang="ts">
     import {Component, Vue} from 'vue-property-decorator';
-    import LeftMenu from '../../components/host/Menus/LeftMenu.vue';
-    import TopMenu from '../../components/host/Menus/TopMenu.vue';
+    import LeftMenu from '../../components/host/menus/LeftMenu.vue';
+    import TopMenu from '../../components/host/menus/TopMenu.vue';
 
     @Component({
         components: {TopMenu, LeftMenu},
@@ -41,7 +41,7 @@
     .main-area {
         position: relative;
         padding-top: 56px;
-        padding-left: 240px;
+        padding-left: 242px;
         padding-right: 0;
         width: 100%;
         min-height: 100vh;
