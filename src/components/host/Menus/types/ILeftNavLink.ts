@@ -1,3 +1,5 @@
 export default interface ILeftNavLink {
-    iconName: string;
+    IconName: string;
+    LinkPath: string;
+    LinkTitle: string;
 }

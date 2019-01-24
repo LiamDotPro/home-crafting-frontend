@@ -1,13 +1,15 @@
 <template>
     <div class="LeftNavLink">
-        <div class="left-nav-item">
-            <div class="icon">
-                <i :class=" 'fa ' + iconName"></i>
+        <router-link :to="this.linkPath">
+            <div class="left-nav-item">
+                <div class="icon">
+                    <i :class=" 'fa ' + this.iconName"></i>
+                </div>
+                <div class="link">
+                    {{this.linkTitle}}
+                </div>
             </div>
-            <div class="link">
-                <router-link to="/host/home">Home</router-link>
-            </div>
-        </div>
+        </router-link>
     </div>
 </template>
 
@@ -19,22 +21,35 @@
     })
     export default class LeftNavLink extends Vue {
 
-        @Prop({default: ''})
-        public iconNameProp!: string;
+        @Prop()
+        public iconName!: string;
+
+        @Prop()
+        public linkPath!: string;
 
         @Prop({default: ''})
-        public linkPathProp!: string;
-
+        public linkTitle!: string;
 
         // bind prop values to local data values.
-        public iconName: string = this.iconNameProp;
-        public linkPath: string = this.linkPathProp;
+        // public iconName: string = this.iconName;
+        // public linkPath: string = this.linkPath;
+        // public linkTitle: string = this.linkTitle;
 
     }
 
 </script>
 
 <style lang="scss" scoped>
+    a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
     .left-nav-item {
         height: 30px;
         display: flex;
@@ -52,10 +67,7 @@
             height: 100%;
             padding: 5px;
 
-            a {
-                color: white;
-                text-decoration: none;
-            }
         }
+
     }
 </style>

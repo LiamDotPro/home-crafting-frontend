@@ -2,7 +2,10 @@
     <div class="LeftMenu d-none d-md-block">
         <div class="sticky">
             <template v-for="linkItem in Links">
-                <left-nav-link :iconNameProp="linkItem.iconName"></left-nav-link>
+                <left-nav-link :iconName="linkItem.IconName"
+                               :linkPath="linkItem.LinkPath"
+                               :linkTitle="linkItem.LinkTitle"
+                ></left-nav-link>
             </template>
         </div>
     </div>
@@ -20,7 +23,9 @@
 
         public Links: ILeftNavLink[] = [
             {
-                iconName: 'fa-home',
+                IconName: 'fa-home',
+                LinkPath: '/host/home',
+                LinkTitle: 'Home',
             },
         ];
 
