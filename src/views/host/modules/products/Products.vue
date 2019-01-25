@@ -1,5 +1,5 @@
 <template>
-    <div class="settings">
+    <div class="Products">
 
     </div>
 </template>
@@ -10,11 +10,11 @@
     @Component({
         components: {},
     })
-    class Settings extends Vue {
+    class Products extends Vue {
 
     }
 
-    export default Settings;
+    export default Products;
 
 </script>
 

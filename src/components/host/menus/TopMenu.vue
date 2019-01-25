@@ -19,22 +19,24 @@
 
             <div class="right-nav-item">
                 <img class="img-fluid img-rounded" :src="require('../../../assets/no-profile.jpg')"
-                     alt="profile"></img>
+                     alt="profile"/>
             </div>
 
         </div>
     </div>
 </template>
 
-<script lang="ts">
+<script lang="js">
     import {Component, Vue} from 'vue-property-decorator';
 
     @Component({
         components: {},
     })
-    export default class TopMenu extends Vue {
+    class TopMenu extends Vue {
 
     }
+
+    export default TopMenu;
 
 </script>
 

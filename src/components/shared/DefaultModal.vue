@@ -32,15 +32,17 @@
     </div>
 </template>
 
-<script lang="ts">
+<script lang="js">
     import {Component, Vue} from 'vue-property-decorator';
 
     @Component({
         components: {},
     })
-    export default class DefaultModal extends Vue {
+    class DefaultModal extends Vue {
 
     }
+
+    export default DefaultModal;
 
 </script>
 
