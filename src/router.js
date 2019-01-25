@@ -2,10 +2,12 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/public/Home.vue';
 import Login from './views/login/Login.vue';
-import HostDashboard from '@/views/host/HostDashboard.vue';
-import Settings from '@/views/host/modules/settings/Settings.vue';
-import Customers from '@/views/host/modules/customers/Customers.vue';
-import Tutorials from '@/views/host/modules/tutorials/Tutorials.vue';
+import HostDashboard from './views/host/HostDashboard';
+import DashHome from './views/host/modules/home/Home';
+import Customers from './views/host/modules/customers/Customers';
+import Tutorials from './views/host/modules/tutorials/Tutorials';
+import Settings from './views/host/modules/settings/Settings';
+import Products from './views/host/modules/products/Products';
 
 Vue.use(Router);
 
@@ -30,7 +32,7 @@ export default new Router({
             children: [
                 {
                     path: 'home',
-                    component: Home,
+                    component: DashHome,
                 },
                 {
                     path: 'customers',
@@ -44,8 +46,11 @@ export default new Router({
                     path: 'settings',
                     component: Settings,
                 },
+                {
+                    path: 'products',
+                    component: Products,
+                },
             ],
         },
-
     ],
-});
+})

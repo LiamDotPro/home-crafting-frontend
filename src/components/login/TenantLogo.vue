@@ -1,18 +1,20 @@
 <template>
     <div id="TenantLogo">
-        <img :src="require('../../assets/logo-assets/logo.png')" alt="Your company logo"></img>
+        <img :src="require('../../assets/logo-assets/logo.png')" alt="Your company logo"/>
     </div>
 </template>
 
-<script lang="ts">
+<script lang="js">
     import {Component, Vue} from 'vue-property-decorator';
 
     @Component({
         components: {},
     })
-    export default class TenantLogo extends Vue {
+    class TenantLogo extends Vue {
 
     }
+
+    export default TenantLogo;
 
 </script>
 

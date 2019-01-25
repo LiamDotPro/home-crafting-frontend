@@ -13,23 +13,25 @@
     </div>
 </template>
 
-<script lang="ts">
+<script lang="js">
     import {Component, Prop, Vue} from 'vue-property-decorator';
 
     @Component({
         components: {},
     })
-    export default class LeftNavLink extends Vue {
+    class LeftNavLink extends Vue {
 
         @Prop()
-        public iconName!: string;
+        iconName;
 
         @Prop()
-        public linkPath!: string;
+        linkPath;
 
         @Prop({default: ''})
-        public linkTitle!: string;
+        linkTitle;
     }
+
+    export default LeftNavLink;
 
 </script>
 

@@ -1,4 +1,4 @@
-# Go-Multitenancy-frontend-vue
+# rework
 
 ## Project setup
 ```

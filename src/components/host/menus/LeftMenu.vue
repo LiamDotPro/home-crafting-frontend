@@ -1,27 +1,27 @@
 <template>
     <div class="LeftMenu d-none d-md-block">
         <div class="sticky">
-            <template v-for="linkItem in Links">
+            <template v-for="(linkItem,index) in Links">
                 <left-nav-link :iconName="linkItem.IconName"
                                :linkPath="linkItem.LinkPath"
                                :linkTitle="linkItem.LinkTitle"
+                               :key="index"
                 ></left-nav-link>
             </template>
         </div>
     </div>
 </template>
 
-<script lang="ts">
+<script lang="js">
     import {Component, Vue} from 'vue-property-decorator';
-    import LeftNavLink from '@/components/host/menus/left-menu/LeftNavLink.vue';
-    import ILeftNavLink from '@/components/host/menus/types/ILeftNavLink';
+    import LeftNavLink from './left-menu/LeftNavLink';
 
     @Component({
         components: {LeftNavLink},
     })
-    export default class LeftMenu extends Vue {
+    class LeftMenu extends Vue {
 
-        public Links: ILeftNavLink[] = [
+        Links = [
             {
                 IconName: 'fa-home',
                 LinkPath: '/host/home',
@@ -38,12 +38,19 @@
                 LinkTitle: 'Tutorials',
             },
             {
+                IconName: 'fa-tag',
+                LinkPath: '/host/products',
+                LinkTitle: 'Products',
+            },
+            {
                 IconName: 'fa-cog',
                 LinkPath: '/host/settings',
                 LinkTitle: 'Settings',
             },
         ];
     }
+
+    export default LeftMenu;
 
 </script>
 

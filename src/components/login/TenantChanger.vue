@@ -8,23 +8,25 @@
     </div>
 </template>
 
-<script lang="ts">
+<script lang="js">
     import {Component, Prop, Vue} from 'vue-property-decorator';
 
     @Component({
         components: {},
     })
-    export default class TenantChanger extends Vue {
+    class TenantChanger extends Vue {
 
-        public host: string = 'Master';
+        host = 'Master';
 
-        @Prop() public tenantModalEvent: any;
+        @Prop() tenantModalEvent;
 
-        public emitModalEvent(): void {
+        emitModalEvent() {
             this.tenantModalEvent();
         }
 
     }
+
+    export default TenantChanger;
 
 </script>
 

@@ -23,7 +23,7 @@
     </div>
 </template>
 
-<script lang="ts">
+<script lang="js">
     import {Component, Vue} from 'vue-property-decorator';
     import LoginFields from '@/components/login/LoginFields.vue';
     import TenantChanger from '@/components/login/TenantChanger.vue';
@@ -33,15 +33,17 @@
     @Component({
         components: {TenantLogo, DefaultModal, TenantChanger, LoginFields},
     })
-    export default class Login extends Vue {
+    class Login extends Vue {
 
-        public showModal: boolean = false;
+        showModal = false;
 
-        public showModalEvent(): void {
+        showModalEvent() {
             this.showModal = true;
         }
 
     }
+
+    export default Login;
 
 </script>
 

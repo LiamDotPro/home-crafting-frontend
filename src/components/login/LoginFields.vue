@@ -20,25 +20,27 @@
     </div>
 </template>
 
-<script lang="ts">
+<script lang="js">
     import {Component, Vue} from 'vue-property-decorator';
 
     @Component({
         components: {},
     })
-    export default class LoginFields extends Vue {
+    class LoginFields extends Vue {
 
-        public form: object = {
+        form = {
             email: '',
             password: '',
             rememberMe: false,
         };
 
 
-        public onSubmit() {
+        onSubmit() {
             //
         }
     }
+
+    export default LoginFields;
 
 </script>
 
